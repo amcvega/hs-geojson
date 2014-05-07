@@ -75,10 +75,10 @@ import Data.Text ( Text )
 --                 *-----------*
 --               (124, -25)  (127, -25)
 --
--- >>> let lShapedGeoPoly = GeoPolygon lshapedPolyVertices
+-- >>> let lShapedGeoPoly = GeoPolygon [lshapedPolyVertices]
 -- >>> let lShapedPoly = Polygon lShapedGeoPoly
 -- >>> let emptyPolyJSON = "{\"type\":\"Polygon\",\"coordinates\":[]}"
--- >>> let emptyGeoPoly = GeoPolygon emptyVertices
+-- >>> let emptyGeoPoly = GeoPolygon [emptyVertices]
 -- >>> let emptyPoly = Polygon emptyGeoPoly
 --
 -- Multi Polys
